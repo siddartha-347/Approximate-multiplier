@@ -4,6 +4,7 @@ This repository presents an approximation technique for a 4x4 bit multiplier bas
 
 - **Mean relative error**: Less than 15%
 - **Number of LUTs**: Less than 12
+- approximations for the approximate compressor were by my own and rest 
 
 ## Overview
 
