@@ -1,125 +1,116 @@
-# Approximate-multiplier
-it is about approximate multipliers
-# Approximation Technique for a 4x4 Bit Multiplier
+ <tr>
+      <td>0</td><td>0</td><td>0</td><td>0</td><td>1</td>
+      <td>1</td><td>0</td><td>0</td>
+      <td>0</td><td>1</td><td>0</td>
+    </tr>
 
-This repository presents an approximation technique for a 4x4 bit multiplier based on the methods described in the paper **"Design and Analysis of Approximate Multipliers"**. The final implementation satisfies the following criteria:
+    <tr>
+      <td>0</td><td>0</td><td>0</td><td>1</td><td>1</td>
+      <td>0</td><td>1</td><td>0</td>
+      <td>1</td><td>1</td><td>0</td>
+    </tr>
 
-- **Mean relative error:** Less than 15%
-- **Number of LUTs:** Less than 12
+    <tr>
+      <td>0</td><td>0</td><td>1</td><td>0</td><td>1</td>
+      <td>0</td><td>1</td><td>0</td>
+      <td>1</td><td>1</td><td>0</td>
+    </tr>
 
----
+    <tr>
+      <td>0</td><td>0</td><td>1</td><td>1</td><td>0</td>
+      <td>0</td><td>1</td><td>0</td>
+      <td>1</td><td>0</td><td>1</td>
+    </tr>
 
-## Overview
-This project implements a 4x4 bit multiplier using approximation techniques to reduce complexity and resource utilization while maintaining acceptable error levels.
+    <tr>
+      <td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
+      <td>1</td><td>1</td><td>0</td>
+      <td>1</td><td>1</td><td>1</td>
+    </tr>
 
----
+    <tr>
+      <td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
+      <td>0</td><td>1</td><td>0</td>
+      <td>1</td><td>1</td><td>0</td>
+    </tr>
 
-## Approximation Techniques
+    <tr>
+      <td>0</td><td>1</td><td>0</td><td>1</td><td>0</td>
+      <td>0</td><td>1</td><td>0</td>
+      <td>1</td><td>0</td><td>0</td>
+    </tr>
 
-### Half Adder
-#### Exact Implementation:
-- **Sum = A ⊕ B**
-- **Carry = A ⋅ B**
+    <tr>
+      <td>0</td><td>1</td><td>1</td><td>0</td><td>0</td>
+      <td>0</td><td>0</td><td>1</td>
+      <td>1</td><td>0</td><td>0</td>
+    </tr>
 
-#### Approximated Implementation:
-- **Sum = A + B**
-- **Carry = A ⋅ B**
+    <tr>
+      <td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
+      <td>1</td><td>0</td><td>1</td>
+      <td>1</td><td>1</td><td>0</td>
+    </tr>
 
-| A | B | Exact  | Approximate |
-|---|---|--------|-------------|
-|   |   | **Sum** | **Carry** | **Sum** | **Carry** |
-| 1 | 1 | 0      | 1         | 1      | 1         |
+    <tr>
+      <td>0</td><td>1</td><td>1</td><td>1</td><td>1</td>
+      <td>0</td><td>1</td><td>1</td>
+      <td>1</td><td>1</td><td>1</td>
+    </tr>
 
-**Error:** 1 out of 4 cases has an error in `Sum`.
+    <tr>
+      <td>1</td><td>0</td><td>0</td><td>0</td><td>1</td>
+      <td>0</td><td>1</td><td>0</td>
+      <td>1</td><td>1</td><td>0</td>
+    </tr>
 
----
+    <tr>
+      <td>1</td><td>0</td><td>0</td><td>1</td><td>0</td>
+      <td>0</td><td>1</td><td>0</td>
+      <td>1</td><td>0</td><td>0</td>
+    </tr>
 
-### Full Adder
-#### Exact Implementation:
-- **Sum = A ⊕ B ⊕ Cin**
-- **Carry = (A ⋅ B) + (B ⋅ Cin) + (Cin ⋅ A)**
+    <tr>
+      <td>1</td><td>0</td><td>1</td><td>0</td><td>0</td>
+      <td>0</td><td>0</td><td>1</td>
+      <td>1</td><td>0</td><td>0</td>
+    </tr>
 
-#### Approximated Implementation:
-- **Sum = (A + B) + Cin**
-- **Carry = B**
+    <tr>
+      <td>1</td><td>0</td><td>1</td><td>0</td><td>1</td>
+      <td>1</td><td>0</td><td>1</td>
+      <td>1</td><td>1</td><td>0</td>
+    </tr>
 
-| A | B | Cin | Exact        | Approximate |
-|---|---|-----|--------------|-------------|
-|   |   |     | **Sum** | **Carry** | **Sum** | **Carry** |
-| 0 | 0 | 1   | 1      | 0         | 0      | 0         |
-| 0 | 1 | 1   | 0      | 1         | 1      | 0         |
-| 1 | 0 | 0   | 1      | 0         | 0      | 1         |
-| 1 | 1 | 0   | 0      | 1         | 1      | 1         |
+    <tr>
+      <td>1</td><td>0</td><td>1</td><td>1</td><td>1</td>
+      <td>0</td><td>1</td><td>1</td>
+      <td>1</td><td>1</td><td>1</td>
+    </tr>
 
-**Error:** 4 out of 8 cases have errors: 4 in `Sum` and 2 in `Carry`.
+    <tr>
+      <td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+      <td>1</td><td>0</td><td>1</td>
+      <td>0</td><td>1</td><td>1</td>
+    </tr>
 
----
+    <tr>
+      <td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
+      <td>0</td><td>1</td><td>1</td>
+      <td>1</td><td>1</td><td>1</td>
+    </tr>
 
-### Partial Product Transformation
-The approximation involves the transformation of partial product terms `am,n` and `an,m` into propagate and generate terms:
+    <tr>
+      <td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+      <td>0</td><td>1</td><td>1</td>
+      <td>1</td><td>1</td><td>1</td>
+    </tr>
 
-- **pm,n = am,n + an,m**
-- **gm,n = am,n ⋅ an,m**
-
-`am,m` terms are retained.
-
-**Images** will be added to demonstrate the transformation process:
-- Placeholder for partial product transformation images.
-
----
-
-### Partial Product Reduction with Compressors
-A compressor is used to simplify the partial product tree. It takes 4 input bits and a carry-in (Cin) bit and generates `Sum`, `Carry`, and `Carry-out (Cout)` bits.
-
-#### Exact Compressor:
-The exact compressor uses two approximate full adders:
-1. The first full adder takes 3 input bits and generates:
-   - **Intermediate Sum**
-   - **Carry-out (Cout)**
-2. The second full adder takes:
-   - **Intermediate Sum**
-   - **4th input bit**
-   - **Carry-in (Cin)**
-   
-and generates the final **Sum** and **Carry** bits.
-
-#### Approximated Compressor:
-- **Carry = Cin**
-- **Sum = (A ⊕ B) + (C + D)**
-- **Carry-out (Cout) = (A ⋅ B) + (C ⋅ D)**
-
-| A | B | C | D | Cin | Exact        | Approximate |
-|---|---|---|---|-----|--------------|-------------|
-|   |   |   |   |     | **Sum** | **Carry** | **Cout** | **Sum** | **Carry** | **Cout** |
-| 0 | 0 | 0 | 0 | 1   | 1      | 0         | 0       | 0      | 1         | 0        |
-| 0 | 0 | 0 | 1 | 1   | 0      | 1         | 0       | 1      | 1         | 0        |
-| 0 | 0 | 1 | 0 | 1   | 0      | 1         | 0       | 1      | 1         | 0        |
-| 0 | 0 | 1 | 1 | 0   | 0      | 1         | 0       | 0      | 0         | 1        |
-| 0 | 0 | 1 | 1 | 1   | 1      | 1         | 0       | 0      | 1         | 1        |
-
-**Error:** 20 out of 32 cases have errors: 16 in `Sum`, 8 in `Carry`, and 6 in `Cout`.
-
-**Images** will be added for:
-- Placeholder for 1st stage of reduction.
-
----
-
-## Final Summation
-After the partial product reduction, the remaining `Sum` and `Carry-out` bits are processed using half adders and full adders to generate the final output.
-
-**Image** will be added for:
-- Placeholder for final summation stage.
-
----
-
-## Results and Analysis
-The design meets the specified criteria:
-
-- **Error:** Mean relative error = 14.02% (less than 15%)
-- **Power Utilization:** 37 mW for logic (Efficient power usage)
-- **LUT Utilization:** Number of LUTs = 9 (less than 12)
-
----
+    <tr>
+      <td>1</td><td>1</td><td>1</td><td>1</td><td>0</td>
+      <td>0</td><td>1</td><td>1</td>
+      <td>1</td><td>0</td><td>1</td>
+    </tr>
 
 ## Contributions
 If you find this project useful, feel free to show your support! 🙏
