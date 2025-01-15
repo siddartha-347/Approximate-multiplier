@@ -1,10 +1,10 @@
 # Approximate 4x4 Bit Multiplier
 
-This repository presents an approximation technique for a 4x4 bit multiplier based on the methods described in the paper *Design and Analysis of Approximate Multipliers*. The final implementation satisfies the following criteria:
+This repository presents an approximation technique for a 4x4 bit multiplier based on the methods described in the paper [Design and Analysis of Approximate Multipliers](https://www.researchgate.net/publication/368293010). The final implementation satisfies the following criteria:
 
 - **Mean relative error**: Less than 15%
 - **Number of LUTs**: Less than 12
-- approximations for the approximate compressor were by my own and rest 
+- approximations for the approximate compressor were by my own and rest of the approximations are from the described paper.
 
 ## Overview
 
@@ -141,7 +141,8 @@ After partial product reduction, the remaining Sum and Carry-out bits are proces
 ---
 
 ## Contributions & Support
+Thanking PaAC team for helping out with this project especially to those who were associated with Approximate Multipliers.🙏
 
-If you find this repository useful, feel free to contribute or donate! 
+If you find this repository useful, feel free to contribute or donate! 🙏🙏
 
 Thank you for your support! ✨
