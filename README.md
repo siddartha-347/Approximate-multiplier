@@ -144,5 +144,6 @@ After partial product reduction, the remaining Sum and Carry-out bits are proces
 Thanking PaAC team for helping out with this project especially to those who were associated with Approximate Multipliers.🙏
 
 If you find this repository useful, feel free to contribute or donate! 🙏🙏
+![Phone Pay Donation](https://github.com/user-attachments/assets/5d331d78-8ce1-49d8-91f8-19933a8098d2)
 
 Thank you for your support! ✨
