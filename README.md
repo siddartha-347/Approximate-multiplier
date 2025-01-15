@@ -122,6 +122,11 @@ After partial product reduction, the remaining Sum and Carry-out bits are proces
 *Images illustrating the final summation stage will be added here.*
 
 
+![Mean_relative _error](https://github.com/user-attachments/assets/cdea8e6b-9fe6-4362-91a4-9fccf34c19b3)
+![Schematic_diagram](https://github.com/user-attachments/assets/cde7409c-9cc6-46fa-886c-49f60e34cb01)
+![luts](https://github.com/user-attachments/assets/f6f06d7e-625c-45c7-b249-edad87b7663a)
+![Power_consumption](https://github.com/user-attachments/assets/b6fc21f1-ae2c-4a14-a36b-2e541c838938)
+
 ---
 
 ## Results and Analysis
