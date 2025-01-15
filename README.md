@@ -121,6 +121,7 @@ After partial product reduction, the remaining Sum and Carry-out bits are proces
 
 *Images illustrating the final summation stage will be added here.*
 
+
 ---
 
 ## Results and Analysis
@@ -137,4 +138,4 @@ After partial product reduction, the remaining Sum and Carry-out bits are proces
 
 If you find this repository useful, feel free to contribute or donate! 
 
-✨ Thank you for your support! ✨
+Thank you for your support! ✨
