@@ -56,17 +56,16 @@ This implementation focuses on the approximation techniques used to optimize a 4
 
 #### Truth Table Comparison:
 
-| A | B | Cin | **Exact Sum** | **Approximate Sum** | **Exact Carry** | **Approximate Carry** | **Exact Cout** | **Approximate Cout** |
-|---|---|-----|---------------|---------------------|-----------------|-----------------------|----------------|----------------------|
-| 0 | 0 | 0   | 0             | 0                   | 0               | 0                     | 0              | 0                    |
-| 0 | 0 | 1   | 1             | 1                   | 0               | 0                     | 0              | 0                    |
-| 0 | 1 | 0   | 1             | 1                   | 0               | 1                     | 0              | 1                    |
-| 0 | 1 | 1   | 0             | 1                   | 1               | 1                     | 1              | 1                    |
-| 1 | 0 | 0   | 1             | 1                   | 0               | 0                     | 0              | 0                    |
-| 1 | 0 | 1   | 0             | 1                   | 1               | 0                     | 1              | 0                    |
-| 1 | 1 | 0   | 0             | 1                   | 1               | 1                     | 1              | 1                    |
-| 1 | 1 | 1   | 1             | 1                   | 1               | 1                     | 1              | 1                    |
-
+| A | B | Cin | **Exact Sum** | **Approximate Sum** | **Exact Carry** | **Approximate Carry** | 
+|---|---|-----|---------------|---------------------|-----------------|-----------------------|
+| 0 | 0 | 0   | 0             | 0                   | 0               | 0                     | 
+| 0 | 0 | 1   | 1             | 1                   | 0               | 0                     |
+| 0 | 1 | 0   | 1             | 1                   | 0               | 1                     | 
+| 0 | 1 | 1   | 0             | 1                   | 1               | 1                     | 
+| 1 | 0 | 0   | 1             | 1                   | 0               | 0                     |
+| 1 | 0 | 1   | 0             | 1                   | 1               | 0                     | 
+| 1 | 1 | 0   | 0             | 1                   | 1               | 1                     | 
+| 1 | 1 | 1   | 1             | 1                   | 1               | 1                     | 
 - **Error**: 3 out of 8 cases have errors (3 in Sum and 2 in Carry).
   
    ![Full_Adder](https://github.com/user-attachments/assets/1089ce79-a35f-465a-8c46-f939bd72a18e)
