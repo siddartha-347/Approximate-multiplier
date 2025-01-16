@@ -39,6 +39,7 @@ This implementation focuses on the approximation techniques used to optimize a 4
 | 1 | 1 | 0             | 1                   | 1               | 1                     |
 
 - **Error**: 1 out of 4 cases has an error in Sum.
+  
 ![Half_Adder](https://github.com/user-attachments/assets/e9241a88-0ae6-4fa8-915b-6040bff475bc)
 
 ---
@@ -67,6 +68,7 @@ This implementation focuses on the approximation techniques used to optimize a 4
 | 1 | 1 | 1   | 1             | 1                   | 1               | 1                     | 1              | 1                    |
 
 - **Error**: 3 out of 8 cases have errors (3 in Sum and 2 in Carry).
+  
 ![Full_Adder](https://github.com/user-attachments/assets/1089ce79-a35f-465a-8c46-f939bd72a18e)
 
 ---
@@ -94,6 +96,8 @@ A compressor is used to simplify the partial product tree, processing 4 input bi
 - **Sum** = (A ⊕ B) + (C + D)
 - **Carry-out (Cout)** = (A ⋅ B) + (C ⋅ D)
 
+  ![Compressor](https://github.com/user-attachments/assets/73b149aa-197c-4791-a304-311b5eeb2f61)
+
 #### Truth Table Comparison:
 
 | A | B | C | D | Cin | **Exact Sum** | **Approximate Sum** | **Exact Carry** | **Approximate Carry** | **Exact Cout** | **Approximate Cout** |
@@ -114,22 +118,14 @@ A compressor is used to simplify the partial product tree, processing 4 input bi
   - **Carry mismatches**: 8
   - **Cout mismatches**: 6
 
-![Compressor](https://github.com/user-attachments/assets/73b149aa-197c-4791-a304-311b5eeb2f61)
 
+<image>
 
 ---
 
 ## Final Summation
 
 After partial product reduction, the remaining Sum and Carry-out bits are processed using half adders and full adders to generate the final output.
-
-*Images illustrating the final summation stage will be added here.*
-
-
-![Mean_relative _error](https://github.com/user-attachments/assets/cdea8e6b-9fe6-4362-91a4-9fccf34c19b3)
-![Schematic_diagram](https://github.com/user-attachments/assets/cde7409c-9cc6-46fa-886c-49f60e34cb01)
-![luts](https://github.com/user-attachments/assets/f6f06d7e-625c-45c7-b249-edad87b7663a)
-![Power_consumption](https://github.com/user-attachments/assets/b6fc21f1-ae2c-4a14-a36b-2e541c838938)
 
 ---
 
@@ -138,8 +134,22 @@ After partial product reduction, the remaining Sum and Carry-out bits are proces
 ### Performance Metrics:
 
 - **Mean relative error**: 14.02% (less than 15%)
+- 
+![Mean_relative _error](https://github.com/user-attachments/assets/cdea8e6b-9fe6-4362-91a4-9fccf34c19b3)
+
+  
 - **Power Utilization**: 37 mW for logic (Efficient power usage)
+
+![Power_consumption](https://github.com/user-attachments/assets/b6fc21f1-ae2c-4a14-a36b-2e541c838938)
+  
 - **LUT Utilization**: Number of LUTs = 9 (less than 12)
+
+  ![luts](https://github.com/user-attachments/assets/f6f06d7e-625c-45c7-b249-edad87b7663a)
+
+- **Schematic Diagram**:
+
+![Schematic_diagram](https://github.com/user-attachments/assets/cde7409c-9cc6-46fa-886c-49f60e34cb01)
+
 
 ---
 
