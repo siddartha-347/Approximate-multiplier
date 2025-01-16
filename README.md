@@ -119,7 +119,7 @@ A compressor is used to simplify the partial product tree, processing 4 input bi
   - **Cout mismatches**: 6
 
 
-<image>
+*images will be added*
 
 ---
 
@@ -134,13 +134,13 @@ After partial product reduction, the remaining Sum and Carry-out bits are proces
 ### Performance Metrics:
 
 - **Mean relative error**: 14.02% (less than 15%)
-- 
-![Mean_relative _error](https://github.com/user-attachments/assets/cdea8e6b-9fe6-4362-91a4-9fccf34c19b3)
+
+  ![Mean_relative _error](https://github.com/user-attachments/assets/cdea8e6b-9fe6-4362-91a4-9fccf34c19b3)
 
   
 - **Power Utilization**: 37 mW for logic (Efficient power usage)
 
-![Power_consumption](https://github.com/user-attachments/assets/b6fc21f1-ae2c-4a14-a36b-2e541c838938)
+  ![Power_consumption](https://github.com/user-attachments/assets/b6fc21f1-ae2c-4a14-a36b-2e541c838938)
   
 - **LUT Utilization**: Number of LUTs = 9 (less than 12)
 
@@ -148,7 +148,7 @@ After partial product reduction, the remaining Sum and Carry-out bits are proces
 
 - **Schematic Diagram**:
 
-![Schematic_diagram](https://github.com/user-attachments/assets/cde7409c-9cc6-46fa-886c-49f60e34cb01)
+  ![Schematic_diagram](https://github.com/user-attachments/assets/cde7409c-9cc6-46fa-886c-49f60e34cb01)
 
 
 ---
