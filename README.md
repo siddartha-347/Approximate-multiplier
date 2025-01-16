@@ -125,11 +125,9 @@ A compressor is used to simplify the partial product tree, processing 4 input bi
 
 After partial product reduction, the remaining Sum and Carry-out bits are processed using half adders and full adders to generate the final output.
 
-  ![approximate additions](https://github.com/user-attachments/assets/697f1f9b-5998-4948-85c6-2e9b188c1a8a)
+ ![approximate additions](https://github.com/user-attachments/assets/5750e09a-071e-49fa-a757-b2077529203b)
 
-
-  ![representation](https://github.com/user-attachments/assets/7faa1058-c7c2-4dba-89db-9e1e29c1a174)
-
+ ![representation](https://github.com/user-attachments/assets/9f375304-e958-447e-bd57-3950976b7dc7)
 
 ---
 
@@ -160,8 +158,8 @@ After partial product reduction, the remaining Sum and Carry-out bits are proces
 ## Contributions & Support
 Thanking PaAC team for helping out with this project especially to those who were associated with Approximate Multipliers.🙏
 
-If you find this repository useful, feel free to contribute or donate! 🙏🙏
+If you find this repository useful, feel free to contribute or donate! 🙏🙏 
 
 <img src="https://github.com/user-attachments/assets/5d331d78-8ce1-49d8-91f8-19933a8098d2" width="85" height="200" />
-
+***JK***
 Thank you for your support! ✨
