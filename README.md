@@ -112,7 +112,8 @@ A compressor is used to simplify the partial product tree, processing 4 input bi
   - **Carry mismatches**: 8
   - **Cout mismatches**: 6
 
-*Images illustrating the reduction process will be added here.*
+![Compressor](https://github.com/user-attachments/assets/73b149aa-197c-4791-a304-311b5eeb2f61)
+
 
 ---
 
