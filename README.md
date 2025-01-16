@@ -40,7 +40,7 @@ This implementation focuses on the approximation techniques used to optimize a 4
 
 - **Error**: 1 out of 4 cases has an error in Sum.
   
-![Half_Adder](https://github.com/user-attachments/assets/e9241a88-0ae6-4fa8-915b-6040bff475bc)
+   ![Half_Adder](https://github.com/user-attachments/assets/e9241a88-0ae6-4fa8-915b-6040bff475bc)
 
 ---
 
@@ -69,7 +69,7 @@ This implementation focuses on the approximation techniques used to optimize a 4
 
 - **Error**: 3 out of 8 cases have errors (3 in Sum and 2 in Carry).
   
-![Full_Adder](https://github.com/user-attachments/assets/1089ce79-a35f-465a-8c46-f939bd72a18e)
+   ![Full_Adder](https://github.com/user-attachments/assets/1089ce79-a35f-465a-8c46-f939bd72a18e)
 
 ---
 
@@ -82,7 +82,9 @@ The approximation involves the transformation of partial product terms `am,n` an
 
 *Note: Some am,m terms are retained in the transformation.*
 
-*Images illustrating the transformation will be added here.*
+   ![partial products 1](https://github.com/user-attachments/assets/4ba770ee-e7a5-4b42-bd11-efccf6d460e4)
+
+   ![partial products 2](https://github.com/user-attachments/assets/ad0884c1-116e-4ce8-bc4a-da7765f27d12)
 
 ---
 
@@ -96,7 +98,7 @@ A compressor is used to simplify the partial product tree, processing 4 input bi
 - **Sum** = (A ⊕ B) + (C + D)
 - **Carry-out (Cout)** = (A ⋅ B) + (C ⋅ D)
 
-  ![Compressor](https://github.com/user-attachments/assets/73b149aa-197c-4791-a304-311b5eeb2f61)
+    ![Compressor](https://github.com/user-attachments/assets/73b149aa-197c-4791-a304-311b5eeb2f61)
 
 #### Truth Table Comparison:
 
@@ -117,15 +119,17 @@ A compressor is used to simplify the partial product tree, processing 4 input bi
   - **Sum mismatches**: 16
   - **Carry mismatches**: 8
   - **Cout mismatches**: 6
-
-
-*images will be added*
-
 ---
 
 ## Final Summation
 
 After partial product reduction, the remaining Sum and Carry-out bits are processed using half adders and full adders to generate the final output.
+
+  ![approximate additions](https://github.com/user-attachments/assets/697f1f9b-5998-4948-85c6-2e9b188c1a8a)
+
+
+  ![representation](https://github.com/user-attachments/assets/7faa1058-c7c2-4dba-89db-9e1e29c1a174)
+
 
 ---
 
