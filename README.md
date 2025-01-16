@@ -39,6 +39,7 @@ This implementation focuses on the approximation techniques used to optimize a 4
 | 1 | 1 | 0             | 1                   | 1               | 1                     |
 
 - **Error**: 1 out of 4 cases has an error in Sum.
+![Half_Adder](https://github.com/user-attachments/assets/e9241a88-0ae6-4fa8-915b-6040bff475bc)
 
 ---
 
@@ -66,6 +67,7 @@ This implementation focuses on the approximation techniques used to optimize a 4
 | 1 | 1 | 1   | 1             | 1                   | 1               | 1                     | 1              | 1                    |
 
 - **Error**: 3 out of 8 cases have errors (3 in Sum and 2 in Carry).
+![Full_Adder](https://github.com/user-attachments/assets/1089ce79-a35f-465a-8c46-f939bd72a18e)
 
 ---
 
